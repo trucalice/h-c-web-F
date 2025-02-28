@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký thành viên</title>
+    <style>
+        form {
+            display: grid;
+            grid-template-columns: auto 10fr;
+            gap: 5px;
+            align-items: center;
+            max-width: 600px;
+        }
+        input, select, textarea {
+            padding: 3px;
+            border: 1px solid #0e0e0e;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="ho_ten">Họ và tên:</label>
+        <input type="text" id="ho_ten" name="hoten" style="width: 150px;">
+
+        <label for="ngay_sinh">Ngày sinh:</label>
+        <input type="date" id="ngay_sinh" name="ngaysinh" style="width: 120px;">
+
+        <label>Giới tính:</label>
+        <div>
+            <input type="radio" id="gioi_tinh_nam" name="gioitinh" value="Nam">
+            <label for="gioi_tinh_nam">Nam</label>
+            <input type="radio" id="gioi_tinh_nu" name="gioitinh" value="Nữ">
+            <label for="gioi_tinh_nu">Nữ</label>
+        </div>
+
+        <label for="sdt">Số điện thoại:</label>
+        <input type="text" id="sdt" name="sdt" style="width: 150px;">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" style="width: 150px;">
+
+        <label for="dia_chi">Địa chỉ:</label>
+        <textarea id="dia_chi" name="dia_chi" style="width: 200px; height: 30px;"></textarea>
+
+        <label for="vai_tro_tv">Vai trò trong nhóm:</label>
+        <select id="vai_tro_tv" name="vaitro_tv" style="width: 175px;">
+            <option>Thành viên</option>
+            <option>Quản trị viên</option>
+            <option>Khách hàng</option>
+        </select>
+
+        <label for="so_thich">Sở thích:</label>
+        <input type="text" id="so_thich" name="so_thich" style="width: 150px;">
+
+        <label for="ky_nang">Kỹ năng:</label>
+        <textarea id="ky_nang" name="ky_nang" style="width: 200px; height: 30px;"></textarea>
+
+        <label>Thời gian rảnh:</label>
+        <div>
+            <input type="checkbox" id="sang" name="thoigian_ranh" value="Sáng">
+            <label for="sang">Sáng</label>
+
+            <input type="checkbox" id="chieu" name="thoigian_ranh" value="Chiều">
+            <label for="chieu">Chiều</label>
+
+            <input type="checkbox" id="toi" name="thoigian_ranh" value="Tối">
+            <label for="toi">Tối</label>
+        </div>
+
+        <label for="ly_do">Lý do tham gia nhóm:</label>
+        <textarea id="ly_do" name="ly_do" style="width: 200px; height: 30px;"></textarea>
+
+        <label for="mau_yeu_thich">Màu yêu thích:</label>
+        <input type="color" id="mau_yeu_thich" name="mauyeuthich" value="#000000" style="width: 50px;">
+
+        <label for="dang_ky_bang_tin">Đăng ký nhận bảng tin:</label>
+        <input type="checkbox" id="dang_ky_bang_tin" name="dangky_bangtin" value="Có">
+        <label for="dang_ky_bang_tin">Có</label>
+
+        <label>Nhận thông báo qua:</label>
+        <div>
+            <input type="radio" id="thongbao_email" name="thongbao" value="Email">
+            <label for="thongbao_email">Email</label>
+            <input type="radio" id="thongbao_sms" name="thongbao" value="SMS">
+            <label for="thongbao_sms">SMS</label>
+        </div>
+
+        <button style="width: 150px;">Đăng ký thành viên</button>
+    </form>
+</body>
+</html>

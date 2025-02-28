@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gửi thông tin</title>
+    <style>
+        form {
+            display: grid;
+            grid-template-columns: auto 10fr;
+            gap: 5px;
+            align-items: center;
+            max-width: 600px;
+        }
+        input, select, textarea {
+            padding: 3px;
+            border: 1px solid #0e0e0e;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="ho_ten">Họ và tên:</label>
+        <input type="text" id="ho_ten" name="hoten" style="width: 150px;">
+
+        <label for="ngay_sinh">Ngày sinh:</label>
+        <input type="date" id="ngay_sinh" name="ngaysinh" style="width: 120px;">
+
+        <label>Giới tính:</label>
+        <div>
+            <input type="radio" id="gioi_tinh_nam" name="gioitinh" value="Nam">
+            <label for="gioi_tinh_nam">Nam</label>
+            <input type="radio" id="gioi_tinh_nu" name="gioitinh" value="Nữ">
+            <label for="gioi_tinh_nu">Nữ</label>
+        </div>
+
+        <label for="cccd">Số căn cước công dân:</label>
+        <input type="text" id="cccd" name="cccd" style="width: 150px;">
+
+        <label for="ngay_cap">Ngày cấp:</label>
+        <input type="date" id="ngay_cap" name="ngaycap" style="width: 120px;">
+
+        <label for="noi_cap">Nơi cấp:</label>
+        <input type="text" id="noi_cap" name="noicap" style="width: 150px;">
+
+        <label for="sdt">Số điện thoại:</label>
+        <input type="text" id="sdt" name="sdt" style="width: 150px;">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" style="width: 150px;">
+
+        <label for="dia_chi_tt">Địa chỉ thường trú:</label>
+        <textarea id="dia_chi_tt" name="diachi_tt" style="width: 200px; height: 30px;"></textarea>
+
+        <label for="dia_chi_tamtru">Địa chỉ tạm trú:</label>
+        <textarea id="dia_chi_tamtru" name="diachi_tamtru" style="width: 200px; height: 30px;"></textarea>
+
+        <label>Loại căn cước công dân:</label>
+        <span>
+            <input type="radio" id="cccd_moi" name="loaicccd" value="moi">
+            <label for="cccd_moi">Căn cước công dân mới</label>
+            <input type="radio" id="cccd_cu" name="loaicccd" value="cu">
+            <label for="cccd_cu">Căn cước công dân cũ</label>
+        </span>
+
+        <label for="dan_toc">Dân tộc:</label>
+        <input type="text" id="dan_toc" name="dantoc" style="width: 150px;">
+
+        <label for="ton_giao">Tôn giáo:</label>
+        <input type="text" id="ton_giao" name="tongiao" style="width: 150px;">
+
+        <label for="quoc_tich">Quốc tịch:</label>
+        <input type="text" id="quoc_tich" name="quoctich" value="Việt Nam" readonly style="width: 150px;">
+
+        <label for="ho_ten_cha">Họ tên cha/mẹ:</label>
+        <input type="text" id="ho_ten_cha" name="hotencha" style="width: 150px;">
+
+        <label for="cmnd_cha">Số CMND/CCCD của cha/mẹ:</label>
+        <input type="text" id="cmnd_cha" name="cmndcha" style="width: 150px;">
+
+        <label for="tinh">Tỉnh/Thành phố:</label>
+        <select id="tinh" name="tinh" style="width: 175px;">
+            <option>Chọn Tỉnh/Thành phố</option>
+        </select>
+
+        <button style="width: 100px;">Gửi thông tin</button>
+    </form>
+</body>
+</html>

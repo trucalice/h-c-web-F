@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gửi Feedback</title>
+</head>
+<body>
+
+    <form action="submit_form.php" method="post">
+        <label>Đánh giá(1-5): </label>
+        <input type="number" name="rating" min="2" max="5">
+        <br> 
+        <label for="comment">Bình luận: </label> 
+        <textarea name="comment" rows="6"></textarea>
+        <br>
+        <button>Gửi Feedback</button>
+    </form>
+</body>
+</html>

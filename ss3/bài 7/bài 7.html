@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gửi thông tin</title>
+    <style>
+        /* Ẩn biểu tượng đồng hồ trên trình duyệt Chrome, Edge */
+        input[type="datetime-local"]::-webkit-datetime-edit-ampm-field {
+            display: none;
+        }
+        form {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 10px;
+            align-items: center;
+            max-width: 500px;
+        }
+        input, select, textarea {
+            padding: 4px;
+            border: 2px solid #7f7a7a;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="ho_ten">Họ và tên:</label>
+        <input type="text" name="ho_ten" style="width: 200px;"> 
+        <label for="email">Email:</label>
+        <input type="email" name="email" style="width: 200px;">
+        <label for="ngay_sinh">Ngày sinh:</label>
+        <input type="date" name="ngay_sinh" style="width: 125px;"> 
+        <label>Giới tính:</label>
+        <div>
+            <input type="radio" name="gioi_tinh" value="Nam" id="male"> <label for="male">Nam</label>
+            <input type="radio" name="gioi_tinh" value="Nữ" id="female"> <label for="female">Nữ</label>
+        </div>
+        <label for="so_dien_thoai">Số điện thoại:</label>
+        <input type="text" name="so_dien_thoai" style="width: 200px;"> 
+        <label for="chuyen_nganh">Chuyên ngành:</label>
+        <input type="text" name="chuyen_nganh" style="width: 200px;"> 
+        <label for="nam_nhap_hoc">Năm nhập học:</label>
+        <input type="text" name="nam_nhap_hoc" style="width: 80px;"> 
+        <label for="gpa">Điểm GPA:</label>
+        <input type="text" name="gpa" style="width: 80px;"> 
+        <label for="dia_chi">Địa chỉ:</label>
+        <textarea name="dia_chi" style="width: 300px; height: 80px;"></textarea> 
+        <label for="loplop">Lớp học:</label>
+        <select name="loplop" id="loplop" style="width: 70px;">
+            <option value="1">Lớp 1</option>
+            <option value="2">Lớp 2</option>
+            <option value="3">Lớp 3</option>
+        </select> 
+        <label for="dang_kiki">Ngày đăng ký học:</label>
+        <input type="datetime-local" name="dang_kiki" id="dang_kiki" style="width: 150px;">
+        <button type="submit">Gửi thông tin</button>
+    </form>
+</body>
+</html>

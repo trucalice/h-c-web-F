@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt lịch</title>
+</head>
+<body>
+
+    <form action="submit_form.php" method="post">
+        <label for="ho_ten">Họ và tên: </label>
+        <input type="text" name="ho_ten">
+        <br>
+        <label for="ngay_gio">Chọn ngày giờ:</label>
+        <input type="datetime-local" name="ngay_gio">
+        <br>
+        <label for="loai_dich_vu">Loại dịch vụ: </label>
+        <select name="loai_dich_vu">
+            <option value="Tư vấn">Tư vấn</option>
+            <option value="1">Dịch vụ 1</option>
+            <option value="2">Dịch vụ 2</option>
+        </select>
+        <br>
+        <label for="Ghi_chu">Ghi chú: </label>
+        <textarea name="Ghi_chu" rows="5"></textarea>
+        <br>
+        <button>Đặt lịch</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đăng Ký Hội Viên</title>
+    <style>
+        form {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 6px;
+            max-width: 650px;
+            font-size: 16px;
+        }
+        input, select, textarea, button {
+            padding: 5px;
+            border: 1px solid #0e0e0e;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="ho_ten">Họ và tên:</label>
+        <input type="text" id="ho_ten" name="hoten" style="width: 200px;">
+        
+        <label for="ngay_sinh">Ngày sinh:</label>
+        <input type="date" id="ngay_sinh" name="ngaysinh" style="width: 150px;">
+        
+        <label>Giới tính:</label>
+        <div>
+            <input type="radio" id="gioi_tinh_nam" name="gioitinh" value="Nam">
+            <label for="gioi_tinh_nam">Nam</label>
+            <input type="radio" id="gioi_tinh_nu" name="gioitinh" value="Nữ">
+            <label for="gioi_tinh_nu">Nữ</label>
+        </div>
+        
+        <label for="so_dien_thoai">Số điện thoại:</label>
+        <input type="text" id="so_dien_thoai" name="sdt" style="width: 200px;">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" style="width: 200px;">
+        
+        <label for="ten_cong_ty">Tên công ty:</label>
+        <input type="text" id="ten_cong_ty" name="tencongty" style="width: 200px;">
+        
+        <label for="vai_tro">Vai trò trong công ty:</label>
+        <select id="vai_tro" name="vaitro" style="width: 210px;">
+            <option>Giám đốc điều hành (CEO)</option>
+            <option>Quản lý</option>
+            <option>Nhân viên</option>
+        </select>
+        
+        <label for="quy_mo">Quy mô công ty:</label>
+        <select id="quy_mo" name="quymo" style="width: 210px;">
+            <option>Doanh nghiệp nhỏ</option>
+            <option>Doanh nghiệp vừa</option>
+            <option>Tập đoàn lớn</option>
+        </select>
+        
+        <label for="nganh_nghe">Ngành nghề công ty:</label>
+        <input type="text" id="nganh_nghe" name="nganh" style="width: 200px;">
+        
+        <label for="ly_do">Lý do tham gia câu lạc bộ:</label>
+        <textarea id="ly_do" name="lydo" style="width: 250px;"></textarea>
+        
+        <label for="kinh_nghiem">Kinh nghiệm lãnh đạo:</label>
+        <textarea id="kinh_nghiem" name="kinhnghiem" style="width: 250px;"></textarea>
+        
+        <label for="muc_tieu">Mục tiêu khi tham gia câu lạc bộ:</label>
+        <textarea id="muc_tieu" name="muctieu" style="width: 250px;"></textarea>
+        
+        <label>Chương trình sự kiện mong muốn tham gia:</label>
+        <div>
+            <input type="checkbox" id="networking" name="su_kien" value="Networking">
+            <label for="networking">Networking</label>
+            <input type="checkbox" id="workshops" name="su_kien" value="Workshops">
+            <label for="workshops">Workshops</label>
+            <input type="checkbox" id="hoi_thao" name="su_kien" value="Hoi_thao">
+            <label for="hoi_thao">Hội thảo</label>
+        </div>
+        
+        <label for="dang_ky_bang_tin">Đăng ký nhận bản tin:</label>
+        <div>
+            <input type="checkbox" id="dang_ky_bang_tin" name="thongbao" value="Có">
+            <label for="dang_ky_bang_tin">Có</label>
+        </div>
+
+        <button style="width: 150px;">Đăng ký hội viên</button>
+    </form>
+</body>
+</html>
