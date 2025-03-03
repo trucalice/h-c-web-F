@@ -1,0 +1,36 @@
+h1, h2, h3 {
+    font-family: sans-serif;
+    color: #333;
+    margin: 20px 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #42939b;  
+    font-weight: 400;  
+}
+
+.example {
+    background-color: #fffbe6;  
+    padding: 15px;
+    margin: 20px 0;
+    border-left: 4px solid #ffd700;  
+    padding-left: 15px;  
+}
+
+pre {
+    margin: 10px 0;
+    font-family: monospace;
+    white-space: pre-wrap;
+}
+
+h4 {
+    color: #666;
+    margin-top: 20px;
+} 

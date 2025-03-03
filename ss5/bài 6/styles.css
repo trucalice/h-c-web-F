@@ -1,0 +1,86 @@
+.header-content {
+    padding-left: 20px;
+}
+
+.center {
+    text-align: center;
+    border: 3px solid green;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+code {
+    color: red;
+    background-color: #fff6e6;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    margin: 0 0 10px 0;
+    font-size: 32px;
+}
+
+p {
+    margin: 0 0 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.example {
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.example h2 {
+    margin: 0 0 15px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.code-container {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    border-left: 3px solid #4CAF50;
+}
+
+pre {
+    margin: 0;
+    font-family: monospace;
+    padding: 15px;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.selector {
+    color: #800000;
+}
+
+.property {
+    color: red;
+    margin-left: 20px;
+}
+
+.value {
+    color: blue;
+}
+
+.try-btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.try-btn:hover {
+    background-color: #45a049;
+}
