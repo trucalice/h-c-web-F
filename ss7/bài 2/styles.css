@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f0f2f5 0%, #e0e4e9 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    padding: 20px;
+}
+
+.layout-table {
+    border-collapse: separate;
+    border-spacing: 20px;
+    margin: -20px;
+    width: 100%;
+    max-width: 1600px;
+}
+
+.layout-table td {
+    width: 25%;
+    padding: 0;
+    vertical-align: top;
+}
+
+.article-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    padding: 25px 20px;
+    transition: all 0.3s ease;
+    aspect-ratio: 16/9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 160px;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.content {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.title {
+    color: #d32f2f;
+    font-size: min(3.5vw, 1.6rem);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: min(15px, 3vh);
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.description {
+    color: #1a237e;
+    font-size: min(1.8vw, 0.95rem);
+    line-height: 1.5;
+    opacity: 0.9;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+@media (max-width: 1200px) {
+    .layout-table {
+        border-spacing: 15px;
+        margin: -15px;
+    }
+
+    .title {
+        font-size: min(4vw, 1.4rem);
+        margin-bottom: 12px;
+    }
+
+    .description {
+        font-size: min(2vw, 0.9rem);
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .layout-table {
+        display: block;
+    }
+
+    .layout-table tr {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .layout-table td {
+        width: calc(50% - 7.5px);
+        display: block;
+    }
+
+    .article-card {
+        padding: 20px 15px;
+        aspect-ratio: 3/2;
+    }
+
+    .title {
+        font-size: min(5vw, 1.3rem);
+    }
+
+    .description {
+        font-size: min(2.5vw, 0.85rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .layout-table td {
+        width: 100%;
+    }
+
+    .article-card {
+        aspect-ratio: 16/9;
+        min-height: 140px;
+    }
+
+    .title {
+        font-size: min(6vw, 1.4rem);
+    }
+
+    .description {
+        font-size: min(3vw, 0.9rem);
+    }
+} 
