@@ -1,0 +1,32 @@
+
+.main{
+    border-top:1px solid #8f8a8a ;
+    width:380px;
+    height: 500px;
+    text-align: center;
+    margin: left;
+    border-right: 1px solid #8f8a8a ;
+}
+.p{
+    opacity: 0.5;
+}
+.p1{
+    text-align: left;
+    opacity: 0.5;
+}
+button{
+    width: 100px;
+    margin: auto;
+    background-color: #fff;
+    padding: 10px;
+    
+}
+
+.main2{
+    border-top:1px solid #8f8a8a ;
+    width:380px;
+    height: 500px;
+    text-align: center;
+    margin: left; 
+    border-right: 1px solid #8f8a8a ;
+}
