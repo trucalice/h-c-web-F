@@ -1,0 +1,42 @@
+
+.h1{
+    border-bottom: 5px solid #faafaf ;
+    width: 250px;
+}
+
+.main{
+    width:380px;
+    height: 400px;
+    text-align: left;
+    margin: left;
+    border-right: 1px solid #8f8a8a ;
+}
+.p{
+    opacity: 0.5;
+}
+.p1{
+    text-align: left;
+    opacity: 0.5;
+}
+button{
+    width: 100px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 10px;
+    color: #faafaf;
+    border-color:  brown;
+}
+
+.main2{
+    width:380px;
+    height: 400px;
+    text-align: left;
+    margin: left; 
+    border-right: 1px solid #8f8a8a ;
+}
+.main3{
+    width:380px;
+    height: 400px;
+    text-align: left;
+    margin: left; 
+}
