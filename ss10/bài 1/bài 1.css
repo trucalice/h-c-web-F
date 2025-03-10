@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    background-color: rgb(235, 233, 233);
+    display: flex;
+    flex-direction: row; 
+    width: 1300px;
+    align-items: center; 
+    justify-content: center;
+    align-content: center;
+}
+
+.box .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+    align-content: center;
+    padding-right: 30px;
+}
+
+.new {
+    font-family: Papyrus;
+    font-size: 32px;
+    font-weight: bold;
+    padding-right: 200px;
+}
+
+.home, .category, .trend, .Recent, .clubs, .sports {
+    padding: 20px;
+}
+
