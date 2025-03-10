@@ -1,47 +1,56 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+.main{
+    display: flex;
+    width: 500px;
+    margin-left: 20px;
+    gap: 10px;
+    flex-direction: column;
 }
-body {
-    font-family: Arial, sans-serif;
-    background-color: azure;
-    text-align: center;
-    padding: 20px;
+.football h3{
+    background-color:#EBEEF3;
+    height: 50px;
+    border-radius: 5px;
 }
-.container {
-    max-width: 100%;
-    margin: auto;
+.football img{
+    border-radius: 5px;
 }
-h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: left;
+.baseketball h3{
+    background-color:#EBEEF3;
+    height: 50px;
+    margin-top: 8px;
+    border-radius: 5px;
 }
-.grid {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 15px;
+.baseketball img{
+    margin-top: 20px;
+    border-radius: 5px;
 }
-.item {
-    position: relative;
-    background: #f0f0f0;
+.car h3{
+    background-color:#EBEEF3;
+    height: 50px;
+    border-radius: 5px;
+}
+.car img{
+    border-radius: 5px;
+}
+.tabletenis h3{
+    background-color:#EBEEF3;
+    height: 50px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.tabletenis img{
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.content{
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+h3{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100px;
 }
-.item img1 {
-    width: 200px;
-    height: 200px;
+h2{
+    margin-top: 10px;
 }
-.label {
-    position: absolute;
-    background: rgba(255, 255, 255, 0.8);
-    color: #333;
-    padding: 10px 15px;
-    font-size: 16px;
-    font-weight: bold;
-}
-
