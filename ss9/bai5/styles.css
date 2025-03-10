@@ -1,0 +1,23 @@
+.box{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    width: 600px;
+    height: 100px;
+    padding: 5px;
+    border: 0px solid black;
+    align-content: space-around;
+}
+.child{
+    background-color: rgb(129, 34, 137);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 15%;
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+}

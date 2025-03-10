@@ -1,0 +1,53 @@
+.box{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    width: 600px;
+    height: 100px;
+    padding: 5px;
+    border: 2px solid black;
+    align-content: space-around;
+}
+.child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 23%;
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+    width: 23%;
+}
+
+.box .child:nth-of-type(1) {
+    background-color: rgb(65, 159, 231);
+}
+
+.box .child:nth-of-type(2) {
+    background-color: rgb(65, 159, 231);
+}
+
+.box .child:nth-of-type(3) {
+    background-color: rgb(65, 159, 231);
+}
+
+.box .child:nth-of-type(4) {
+    background-color: rgb(65, 159, 231);
+}
+
+.box .child:nth-of-type(5) {
+    background-color: rgb(65, 159, 231);
+    width: 48%; 
+}
+
+.box .child:nth-of-type(6) {
+    background-color: rgb(65, 159, 231);
+}
+
+.box .child:nth-of-type(7) {
+    background-color: rgb(65, 159, 231);
+}
+
