@@ -1,0 +1,23 @@
+.btn.btn-primary{
+    background-color: green;
+    margin-top: 10px;
+}
+*{
+    margin: 0px;
+}
+.container{
+   border-radius: 10px;
+   background-color: aliceblue;
+   position: relative;
+   margin-top: 100px;
+   padding: 20px;
+ }
+body{
+   background-color: #7F7F7F;
+ }
+ .container i{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    font-size: 20px;
+ }
