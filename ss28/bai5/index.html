@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 class="info"> Thông tin công ty</h2>
+    <p class="infomation"> </p>
+    <script>
+        const company = {
+
+            name: "RikkeiSoft",
+
+            location: "Hà Nội",
+
+            employees: [
+
+                {
+                    name: "Nguyễn Văn Luận",
+                    position: "Developer"
+                },
+
+                {
+                    name: "Nguyễn Văn Hoàng",
+                    position: "Tester"
+                },
+
+                {
+                    name: "Hoàng Nam Cao",
+                    position: "Manager"
+                }
+
+            ]
+
+        };
+        let info = document.querySelector(`.infomation`)
+        let output = `tên công ty: ${company.name} <br><br>`;
+        output += `Danh sách nhân viên: <br>`;
+        company.employees.forEach(employee => {
+            output += `- ${employee.name} <br>`;
+        });
+        info.innerHTML = output;
+    </script>
+</body>
+
+</html>

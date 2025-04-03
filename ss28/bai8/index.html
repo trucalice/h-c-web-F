@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let employees = [{
+                id: 1,
+                name: "Nguyễn Văn A",
+                position: "Manager",
+                salary: 15000000
+            },
+            {
+                id: 2,
+                name: "Trần Thị B",
+                position: "Developer",
+                salary: 12000000
+            },
+            {
+                id: 3,
+                name: "Lê Văn C",
+                position: "Designer",
+                salary: 10000000
+            }
+        ];
+
+
+        function showMenu() {
+            let choice;
+            do {
+                choice = prompt(
+                    " Quản lý nhân viên:\n" +
+                    "1 Thêm nhân viên\n" +
+                    " 2 Xóa nhân viên theo ID\n" +
+                    "3Cập nhật lương nhân viên theo ID\n" +
+                    "4 Tìm kiếm nhân viên theo tên\n" +
+                    "5 Hiển thị danh sách nhân viên\n" +
+                    "0 Thoát\n\n" +
+                    "🔹 Nhập lựa chọn:"
+                );
+
+                switch (choice) {
+                    case "1":
+                        addEmployee();
+                        break;
+                    case "2":
+                        deleteEmployee();
+                        break;
+                    case "3":
+                        updateSalary();
+                        break;
+                    case "4":
+                        searchEmployee();
+                        break;
+                    case "5":
+                        displayEmployees();
+                        break;
+                    case "0":
+                        alert(" Thoát chương trình!");
+                        break;
+                    default:
+                        alert(" Vui lòng chọn đúng số trong menu!");
+                }
+            } while (choice !== "0");
+        }
+
+        function addEmployee() {
+            let name = prompt("Nhập tên nhân viên:");
+            let position = prompt("Nhập chức vụ:");
+            let salary = parseFloat(prompt("Nhập mức lương:"));
+            employees.push({
+                id,
+                name,
+                position,
+                salary
+            });
+            alert(` Nhân viên ${name} đã được thêm thành công!`);
+        }
+
+        function deleteEmployee() {
+            let id = parseInt(prompt("Nhập ID nhân viên cần xóa:"));
+            let index = employees.findIndex(e => e.id === id);
+            employees.splice(index, 1);
+            alert(" Nhân viên đã bị xóa!");
+
+        }
+
+        function updateSalary() {
+            let id = parseInt(prompt("Nhập ID nhân viên cần thay đổi mức lương :"));
+            let employee = employees.find(e => e.id === id);
+            let newSalary = parseFloat(prompt(`Nhập mức lương mới cho ${employee.name}:`));
+            employee.salary = newSalary
+            alert('Đã updete mức lương thành công')
+        }
+
+        function searchEmployee() {
+            let name = prompt(" mời bạn nhập vào tên cần tìm")
+            let results = employees.filter(e => e.name.includes(name));
+            let output = "Kết quả tìm kiếm:\n";
+            results.forEach(e => output +=
+                ` ID: ${e.id} |  ${e.name} |  ${e.position} |  ${e.salary.toLocaleString()} VND\n`);
+            alert(output);
+        }
+        const displayEmployees = () => {
+            let output = " Danh sách nhân viên:\n";
+            employees.forEach(e => output +=
+                ` ID: ${e.id} |  ${e.name} |  ${e.position} |  ${e.salary.toLocaleString()} VND\n`);
+            alert(output);
+
+        }
+        showMenu()
+    </script>
+</body>
+
+
+</html>

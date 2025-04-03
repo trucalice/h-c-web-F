@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let students = [
+
+            {
+                name: "Trần Trí Dương",
+                scores: {
+                    math: 9,
+                    english: 8,
+                    literature: 7
+                }
+            },
+
+            {
+                name: "Hà Bích Ngọc",
+                scores: {
+                    math: 3,
+                    english: 2,
+                    literature: 5
+                }
+            },
+
+            {
+                name: "Bùi Thái Sơn",
+                scores: {
+                    math: 9.5,
+                    english: 9,
+                    literature: 9
+                }
+            }
+
+        ];
+        const getAverage = (scores) => (scores.math + scores.english + scores.literature) / 3;
+        const filterAverage = (x) => x.filter(num => getAverage(num.scores) >= 8)
+        console.log(filterAverage(students))
+    </script>
+</body>
+
+</html>
