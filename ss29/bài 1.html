@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy ATM</title>
+</head>
+<body>
+    <script>
+     
+     let list = [];
+
+function addList() {
+    let id = Number(prompt("Nhập ID muốn thêm:"));
+    let name = prompt("Nhập tên muốn thêm:");
+    let email = prompt("Nhập email muốn thêm:");
+    let phone = Number(prompt("Nhập SĐT muốn thêm:"));
+    list.push({ id, name, email, phone });
+    alert("Đã thêm thành công!");
+}
+
+function showList() {
+    if (list.length === 0) {
+        alert("Danh sách trống.");
+    } else {
+        let message = "Danh sách hiện có:\n";
+        for (let i = 0; i < list.length; i++) {
+            message += `${i + 1}. ID: ${list[i].id}, Tên: ${list[i].name}, Email: ${list[i].email}, SDT: ${list[i].phone}\n`;
+        }
+        alert(message);
+    }
+}
+
+function findList() {
+    let phone = Number(prompt("Nhap sdt can tim:"));
+    let results = list.findIndex(list => list.phone == phone);
+
+    if (results != -1){
+       let mess = alert("Ket qua tim kiem: \n");
+            message += `ID: ${list.id}, Tên: ${list.name}, Email: ${list.email}, SDT: ${list.phone}\n`;
+        ;
+    }
+}
+
+
+let choice;
+do {
+    choice = prompt(`
+========== MENU ==========
+1. Thêm người vào danh sách
+2. Hiển thị danh sách
+3. Thoát
+==========================
+Nhập lựa chọn của bạn:
+`);
+
+    switch (choice) {
+        case '1':
+            addList();
+            break;
+        case '2':
+            showList();
+            break;
+        case '3':
+            alert("Thoát chương trình.");
+            break;
+        default:
+            alert("Lựa chọn không hợp lệ!");
+            continue;
+    }
+
+} while (choice !== '3');
+
+
+    </script>
+</body>
+</html>
